@@ -1,0 +1,16 @@
+Fluxo da calculadora:
+O arquivo carrega no navegador;
+É chamada a função que localiza os botões e adiciona um evento de clique em cada um;
+Quando o usuário clica num botão de número é estado se ele vai ser para o primeiro fator ou segundo através da checagem do sinal da operação;
+Se o usuário clicar num botão de sinal, existem algumas opções:
+    Se não tem número nenhum, retorna;
+    Se já tem o primeiro fator, adiciona ou substitui o valor do sinal;
+    Se tem os primeiro e segundo fatores, resolve o cálculo, adiciona o valor do resultado como primeiro fator e atualiza o valor do sinal;
+    Se for sinal de resultado (=), testa se tem os dois fatores e o sinal de operação e resolve o cálculo. Senão, retorna.
+    Se clicar no sinal de slice (excluir o último caracter):
+        Testa se tem o último fator e dá slice nele;
+        Senão testa se tem o sinal e dá slice nele;
+        Senão testa se existe o primeiro fator e dá slice nele;
+        Senão retorna.
+    Se clicar em clearAll, reseta todos os valores do estado global.
+A calculadora foi projetada em módulos. Cada arquivo é uma peça separada da máquina, tudo funciona através do fluxo no controlador. Ele analisa e toma as decisões, as peças atualizam o estado global e com base nele, no final do fluxo (cada clique num botão ativa todo o fluxo), é atualizada a tela...
