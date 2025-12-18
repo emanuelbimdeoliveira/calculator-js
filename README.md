@@ -46,6 +46,34 @@ All calculator logic is located in the `logic` folder, where each responsibility
 
 This structure improves readability, maintainability, and scalability.
 
+## 📂 Folders Structure
+
+```text
+calculator-js
+│   core.txt
+│   index.html
+│   index.js
+│   LICENSE
+│   style.css
+└───logic
+    ├───modules
+    │   ├───controller
+    │   │       controller.js
+    │   └───functions
+    │       ├───control-opetarion
+    │       │       controlOperation.js
+    │       ├───handles
+    │       │       handles.js
+    │       ├───operations
+    │       │       operations.js
+    │       └───state-operators
+    │               stateOperators.js
+    ├───state
+    │       state.js
+    └───tests
+            test.js
+```
+
 ---
 
 ## 📚 What I Learned
