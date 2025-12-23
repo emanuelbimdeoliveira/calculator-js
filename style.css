@@ -145,7 +145,30 @@ main {
     gap: 0.2em;
     width: 90%;
   }
+
   .screen {
     width: 360px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .screen {
+    width: 320px;
+  }
+  .button {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .screen {
+    width: 290px;
+  }
+
+  .buttons {
+    width: 95%;
+  }
+  .button {
+    width: 60px;
   }
 }
